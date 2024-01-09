@@ -5,8 +5,8 @@ import cors from 'cors';
 import todosRoutes from './routes/todos.js';
 
 const app = express();
-// import path from 'path';
-const port = require('path');
+import path from 'path';
+
 dotenv.config();
 app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
